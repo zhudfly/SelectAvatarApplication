@@ -18,6 +18,7 @@
 ```
 
 ##Advanced
+
 对控件属性的设置，需要改变默认样式时，可选择修改以下属性
 ```JAVA
 avatarImageView = (AvatarImageView) findViewById(R.id.avatarIv); 
@@ -72,6 +73,7 @@ avatarImageView.setBtnTextSize(30);
 
   ```
   
+  
   头像设置成功的回调
   ```JAVA
   avatarImageView.setAfterCropListener(new AvatarImageView.AfterCropListener() {
@@ -81,6 +83,7 @@ avatarImageView.setBtnTextSize(30);
             }
         });
   ```
+  
   
   需要设置拍照和图集页面关闭后的回调函数，来实现设置头像
   ```JAVA
