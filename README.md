@@ -96,5 +96,5 @@ avatarImageView.setBtnTextSize(30);
         }
     }
 ```
-TIPS
+##TIPS
 Android 5.0 以上支持水波纹效果,Android 5.0之前是普通点击效果
