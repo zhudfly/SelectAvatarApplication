@@ -104,6 +104,7 @@ avatarImageView.setBtnTextSize(30);
         <item name="android:windowEnterAnimation">@anim/avatar_dialog_in</item>
         <item name="android:windowExitAnimation">@anim/avatar_dialog_out</item>
     </style>
-    ```
+```
+
 ##TIPS
 Android 5.0 以上支持水波纹效果,Android 5.0之前是普通点击效果
