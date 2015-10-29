@@ -97,13 +97,58 @@ avatarImageView.setBtnTextSize(30);
     }
 ```
 
-对话框显示和消失的动画试例，以下代码写入styles.xml中:
+###对话框显示和消失的动画试例:
+以下代码写入styles.xml中:
 ```xml
 <!--AvatarDialog 这个自定义控件使用的样式-->
     <style name="avatar_dialog_animation">
         <item name="android:windowEnterAnimation">@anim/avatar_dialog_in</item>
         <item name="android:windowExitAnimation">@anim/avatar_dialog_out</item>
     </style>
+```
+其中avatar_dialog_in.xml内容为：
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="200"
+        android:fromAlpha="0"
+        android:toAlpha="1" >
+    </alpha>
+
+    <scale
+        android:duration="200"
+        android:fromXScale="0"
+        android:fromYScale="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1"
+        android:toYScale="1" />
+
+</set>
+```
+avatar_dialog_out.xml内容为：
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <alpha
+        android:duration="200"
+        android:fromAlpha="1"
+        android:toAlpha="0" >
+    </alpha>
+
+    <scale
+        android:duration="200"
+        android:fromXScale="1"
+        android:fromYScale="1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0"
+        android:toYScale="0" />
+
+</set>
 ```
 
 ##TIPS
