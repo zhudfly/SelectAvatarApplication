@@ -96,5 +96,14 @@ avatarImageView.setBtnTextSize(30);
         }
     }
 ```
+
+对话框显示和消失的动画试例，以下代码写入styles.xml中:
+```xml
+<!--AvatarDialog 这个自定义控件使用的样式-->
+    <style name="avatar_dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/avatar_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/avatar_dialog_out</item>
+    </style>
+    ```
 ##TIPS
 Android 5.0 以上支持水波纹效果,Android 5.0之前是普通点击效果
