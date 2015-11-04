@@ -97,7 +97,7 @@ avatarImageView.setBtnTextSize(30);
     }
 ```
 
-###对话框显示和消失的动画试例:
+###对话框显示和消失的动画示例:
 以下代码写入styles.xml中:
 ```xml
 <!--AvatarDialog 这个自定义控件使用的样式-->
